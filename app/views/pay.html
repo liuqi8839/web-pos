@@ -38,7 +38,7 @@
                 <li class="active"><a>商品列表</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li> <a href="../views/cart.html"><span class=" glyphicon glyphicon-shopping-cart"></span>购物车(0)</a></li>
+                <li> <a href="../views/cart.html"><span class=" glyphicon glyphicon-shopping-cart"></span>购物车(<span id="item-numbers">0</span>)</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -142,6 +142,8 @@
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="../scripts/pay.js"></script>
+<script src="../underscore.js"></script>
+
 <!-- endbuild -->
 </body>
 </html>

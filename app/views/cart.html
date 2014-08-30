@@ -17,9 +17,6 @@
     <!-- endbuild -->
 </head>
 <body role="document">
-<!--[if lt IE 10]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -38,7 +35,7 @@
                 <li><a href="itemlist.html">商品列表</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"> <a><span class=" glyphicon glyphicon-shopping-cart"></span>购物车(0)</a></li>
+                <li class="active"> <a><span class=" glyphicon glyphicon-shopping-cart"></span>购物车(<span id="item-numbers">0</span>)</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -74,7 +71,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
+        <tr class="cola">
             <td style="width: 218px;">
                 可口可乐
             </td>
@@ -89,23 +86,168 @@
                     <div class="col-lg-6">
                         <div class="input-group input-grounp_width">
                              <span class="input-group-btn">
-                                 <button class="btn btn-default" type="button">-</button>
+                                 <button class="btn btn-default sub-cola" type="button">-</button>
                              </span>
-                            <input type="text" class="form-control">
+                            <input type="text" id="input-cola" class="form-control" value="3">
                             <span class="input-group-btn">
-                                 <button class="btn btn-default" type="button">+</button>
+                                 <button class="btn btn-default add-cola" type="button">+</button>
                              </span>
                         </div><!-- /input-group -->
-                </div><!-- /.row -->
-
+                     </div><!-- /.row -->
+                </div>
             </td>
             <td>
-                9
+                <span id="minor_cola">9</span>
+            </td>
+        </tr>
+        <tr class="spring">
+            <td style="width: 218px;">
+                雪碧
+            </td>
+            <td style="width: 218px;">
+                3
+            </td>
+            <td>
+                瓶
+            </td>
+            <td>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group input-grounp_width">
+                             <span class="input-group-btn">
+                                 <button class="btn btn-default sub-spring" type="button">-</button>
+                             </span>
+                            <input type="text" id="input-spring" class="form-control" value="1">
+                            <span class="input-group-btn">
+                                 <button class="btn btn-default add-spring" type="button">+</button>
+                             </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.row -->
+                </div>
+            </td>
+            <td>
+                <span id="minor_spring">9</span>
+            </td>
+        </tr>
+        <tr class="apple">
+            <td style="width: 218px;">
+                苹果
+            </td>
+            <td style="width: 218px;">
+                5.5
+            </td>
+            <td>
+                斤
+            </td>
+            <td>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group input-grounp_width">
+                             <span class="input-group-btn">
+                                 <button class="btn btn-default sub-apple" type="button">-</button>
+                             </span>
+                            <input type="text" id="input-apple" class="form-control" value="1">
+                            <span class="input-group-btn">
+                                 <button class="btn btn-default add-apple" type="button">+</button>
+                             </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.row -->
+                </div>
+            </td>
+            <td>
+                <span id="minor_apple">9</span>
+            </td>
+        </tr>
+        <tr class="litchi">
+            <td style="width: 218px;">
+                荔枝
+            </td>
+            <td style="width: 218px;">
+                15
+            </td>
+            <td>
+                斤
+            </td>
+            <td>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group input-grounp_width">
+                             <span class="input-group-btn">
+                                 <button class="btn btn-default sub-litchi" type="button">-</button>
+                             </span>
+                             <input type="text" id="input-litchi" class="form-control" value="1">
+                             <span class="input-group-btn">
+                                 <button class="btn btn-default add-litchi" type="button">+</button>
+                              </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.row -->
+                </div>
+            </td>
+            <td>
+                <span id="minor_litchi">9</span>
+            </td>
+        </tr>
+        <tr class="buttery">
+            <td style="width: 218px;">
+                电池
+            </td>
+            <td style="width: 218px;">
+                2
+            </td>
+            <td>
+                个
+            </td>
+            <td>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group input-grounp_width">
+                             <span class="input-group-btn">
+                                 <button class="btn btn-default sub-buttery" type="button">-</button>
+                             </span>
+                            <input type="text" id="input-buttery" class="form-control" value="1">
+                            <span class="input-group-btn">
+                                 <button class="btn btn-default add-buttery" type="button">+</button>
+                             </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.row -->
+                </div>
+            </td>
+            <td>
+                <span id="minor_buttery">9</span>
+            </td>
+        </tr>
+        <tr class="noodle">
+            <td style="width: 218px;">
+                方便面
+            </td>
+            <td style="width: 218px;">
+                4.5
+            </td>
+            <td>
+                袋
+            </td>
+            <td>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group input-grounp_width">
+                             <span class="input-group-btn">
+                                 <button class="btn btn-default sub-noodle" type="button">-</button>
+                             </span>
+                            <input type="text" id="input-noodle" class="form-control" value="1">
+                            <span class="input-group-btn">
+                                 <button class="btn btn-default add-noodle" type="button">+</button>
+                             </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.row -->
+                </div>
+            </td>
+            <td>
+                <span id="minor_noodle">9</span>
             </td>
         </tr>
         </tbody>
     </table>
-    <p align="right">总计：0.00元</p>
+    <p align="right">总计：<span id="total">0</span>元</p>
     <p align="right"><a href="pay.html" class="btn btn-primary btn-lg" role="button">付款</a></p>
 </div>
 
@@ -143,6 +285,8 @@
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="../scripts/cart.js"></script>
+<script src="../underscore.js"></script>
+
 <!-- endbuild -->
 </body>
 </html>
