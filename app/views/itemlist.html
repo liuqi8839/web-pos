@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>web pos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- endbuild -->
+</head>
+<body role="document">
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Let's Go</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">主页</a></li>
+                <li class="active"><a>商品列表</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li> <a href="../views/cart.html"><span class=" glyphicon glyphicon-shopping-cart"></span>购物车(0)</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container theme-showcase" role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron ">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                        商品列表
+            </div>
+        </div>
+    </div>
+
+    <table class="table table-bordered text_center">
+        <thead>
+        <tr>
+            <th class="text_center">
+                分类
+            </th>
+            <th class="text_center">
+                名称
+            </th>
+            <th class="text_center">
+                单价（元）
+            </th>
+            <th class="text_center">
+                单位
+            </th>
+            <td>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                饮料
+            </td>
+            <td>
+                可口可乐
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                瓶
+            </td>
+            <td>
+                <p align="center"><a href="#" class="btn btn-primary btn-2" role="button">加入购物车</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                饮料
+            </td>
+            <td>
+                雪碧
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                瓶
+            </td>
+            <td>
+                <p align="center"><a href="#" class="btn btn-primary btn-2" role="button">加入购物车</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                水果
+            </td>
+            <td>
+                苹果
+            </td>
+            <td>
+                5.5
+            </td>
+            <td>
+                斤
+            </td>
+            <td>
+                <p align="center"><a href="#" class="btn btn-primary btn-2" role="button">加入购物车</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                水果
+            </td>
+            <td>
+                荔枝
+            </td>
+            <td>
+                15
+            </td>
+            <td>
+                斤
+            </td>
+            <td>
+                <p align="center"><a href="#" class="btn btn-primary btn-2" role="button">加入购物车</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                生活用品
+            </td>
+            <td>
+                电池
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                个
+            </td>
+            <td>
+                <p align="center"><a href="#" class="btn btn-primary btn-2" role="button">加入购物车</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                食品
+            </td>
+            <td>
+                方便面
+            </td>
+            <td>
+                4.5
+            </td>
+            <td>
+                袋
+            </td>
+            <td>
+                <p align="center"><a href="#" class="btn btn-primary btn-2" role="button">加入购物车</a></p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+<!-- build:js scripts/plugins.js -->
+<script src="../../bower_components/bootstrap/js/affix.js"></script>
+<script src="../../bower_components/bootstrap/js/alert.js"></script>
+<script src="../../bower_components/bootstrap/js/dropdown.js"></script>
+<script src="../../bower_components/bootstrap/js/tooltip.js"></script>
+<script src="../../bower_components/bootstrap/js/modal.js"></script>
+<script src="../../bower_components/bootstrap/js/transition.js"></script>
+<script src="../../bower_components/bootstrap/js/button.js"></script>
+<script src="../../bower_components/bootstrap/js/popover.js"></script>
+<script src="../../bower_components/bootstrap/js/carousel.js"></script>
+<script src="../../bower_components/bootstrap/js/scrollspy.js"></script>
+<script src="../../bower_components/bootstrap/js/collapse.js"></script>
+<script src="../../bower_components/bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="../scripts/itemlist.js"></script>
+<!-- endbuild -->
+</body>
+</html>
