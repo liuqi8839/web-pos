@@ -11,7 +11,6 @@ $(document).ready(function() {
     }
     $("#item-numbers").text(numbers);
 
-
     function addItem(name,price,unit) {
         numbers += 1;
         $("#item-numbers").text(numbers);
@@ -28,7 +27,6 @@ $(document).ready(function() {
         }
         localStorage.Item = JSON.stringify(Items);
     }
-
 
     $(".cola").on("click", function(event) {
         event.preventDefault();
