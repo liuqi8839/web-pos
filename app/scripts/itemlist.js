@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var price,name,unit;
+    var kind,price,name,unit;
     var numbers = 0;
     if(!localStorage.Item) {
         localStorage.Item = "[]";
@@ -11,7 +11,7 @@ $(document).ready(function() {
     }
     $("#item-numbers").text(numbers);
 
-    function addItem(name,price,unit) {
+    function addItem(kind,name,price,unit) {
         numbers += 1;
         $("#item-numbers").text(numbers);
         var flag = true;
@@ -23,7 +23,7 @@ $(document).ready(function() {
             }
         }
         if(flag == true) {
-            Items.push({name: name, price: price, unit: unit, numbers: 1});
+            Items.push({kind:kind,name: name, price: price, unit: unit, numbers: 1});
         }
         localStorage.Item = JSON.stringify(Items);
     }
@@ -31,51 +31,57 @@ $(document).ready(function() {
     $(".cola").on("click", function(event) {
         event.preventDefault();
         event.stopPropagation();
+        kind = $(this).data("kind");
         price = +$(this).data("price");
         name = $(this).data("name");
         unit = $(this).data("unit");
-        addItem(name,price,unit);
+        addItem(kind,name,price,unit);
     });
     $(".spring").on("click", function(event) {
         event.preventDefault();
         event.stopPropagation();
+        kind = $(this).data("kind");
         price = +$(this).data("price");
         name = $(this).data("name");
         unit = $(this).data("unit");
-        addItem(name,price,unit);
+        addItem(kind,name,price,unit);
     });
     $(".apple").on("click", function(event) {
         event.preventDefault();
         event.stopPropagation();
+        kind = $(this).data("kind");
         price = +$(this).data("price");
         name = $(this).data("name");
         unit = $(this).data("unit");
-        addItem(name,price,unit);
+        addItem(kind,name,price,unit);
     });
     $(".litchi").on("click", function(event) {
         event.preventDefault();
         event.stopPropagation();
+        kind = $(this).data("kind");
         price = +$(this).data("price");
         name = $(this).data("name");
         unit = $(this).data("unit");
-        addItem(name,price,unit);
+        addItem(kind,name,price,unit);
 
     });
     $(".battery").on("click", function(event) {
         event.preventDefault();
         event.stopPropagation();
+        kind = $(this).data("kind");
         price = +$(this).data("price");
         name = $(this).data("name");
         unit = $(this).data("unit");
-        addItem(name,price,unit);
+        addItem(kind,name,price,unit);
     });
     $(".noodle").on("click", function(event) {
         event.preventDefault();
         event.stopPropagation();
+        kind = $(this).data("kind");
         price = +$(this).data("price");
         name = $(this).data("name");
         unit = $(this).data("unit");
-        addItem(name,price,unit);
+        addItem(kind,name,price,unit);
     });
 
 

@@ -9,6 +9,7 @@ $(document).ready(function() {
         }
         var Items = JSON.parse(localStorage.Item);
         var show_hide = [];
+
         for (var i = 0; i < 6; i++) {
             show_hide[i] = false;
         }
@@ -17,7 +18,7 @@ $(document).ready(function() {
             if (num >= 3) {
                 num = num - parseInt(num / 3);
             }
-            minor_total = price * num;
+            return minor_total = price * num;
         }
 
         for (i = 0; i < Items.length; i++) {
