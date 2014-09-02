@@ -33,7 +33,18 @@ $(document).ready(function() {
         kind = allItems[j].kind;
         price = allItems[j].price;
         unit = allItems[j].unit;
-        var addItem = $("<tr><td>"+kind+"</td><td>"+name+"</td><td>"+price+"</td><td>"+unit+"</td><td><p align='center'><a href='#' class='btn btn-primary btn-2 add-goods' role='button'>加入购物车</a></p></td></tr>");
+        var addItem = $(
+            "<tr>" +
+                "<td>"+kind+"</td>" +
+                "<td>"+name+"</td>" +
+                "<td>"+price+"</td>" +
+                "<td>"+unit+"</td>" +
+                "<td>" +
+                "<p align='center'>" +
+                "<a href='#' class='btn btn-primary btn-2 add-goods' role='button'>加入购物车</a>" +
+                "</p>" +
+                "</td>" +
+            "</tr>");
         $('tbody').append(addItem);
     }
 

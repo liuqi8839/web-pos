@@ -35,10 +35,10 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="../index.html">主页</a></li>
-                <li class="active"><a>商品列表</a></li>
+                <li><a>商品列表</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li> <a href="../views/cart.html"><span class=" glyphicon glyphicon-shopping-cart"></span>购物车(<span id="item-numbers">0</span>)</a></li>
+                <li  class="active"> <a href="../views/cart.html"><span class=" glyphicon glyphicon-shopping-cart"></span>购物车(<span id="item-numbers">0</span>)</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -76,127 +76,8 @@
             </th>
         </tr>
         </thead>
-        <tbody>
-        <tr id="cola">
-            <th class="text_center">
-                饮料
-            </th>
-            <th class="text_center">
-                可口可乐
-            </th>
-            <th class="text_center">
-                3
-            </th>
-            <th class="text_center">
-                瓶
-            </th>
-            <th class="text_center cola-count">
-                2
-            </th>
-            <th class="text_center cola-minor">
-                6
-            </th>
-        </tr>
-        <tr id="spring">
-            <th class="text_center">
-                饮料
-            </th>
-            <th class="text_center">
-                雪碧
-            </th>
-            <th class="text_center">
-                3
-            </th>
-            <th class="text_center">
-                瓶
-            </th>
-            <th class="text_center spring-count">
-                2
-            </th>
-            <th class="text_center spring-minor">
-                6
-            </th>
-        </tr>
-        <tr id="apple">
-            <th class="text_center">
-                水果
-            </th>
-            <th class="text_center pay-apple">
-                苹果
-            </th>
-            <th class="text_center">
-                5.5
-            </th>
-            <th class="text_center">
-                斤
-            </th>
-            <th class="text_center apple-count">
-                2
-            </th>
-            <th class="text_center apple-minor">
-                11
-            </th>
-        </tr>
-        <tr id="litchi">
-            <th class="text_center">
-                水果
-            </th>
-            <th class="text_center pay-litchi">
-                荔枝
-            </th>
-            <th class="text_center">
-                15
-            </th>
-            <th class="text_center">
-                斤
-            </th>
-            <th class="text_center litchi-count">
-                2
-            </th>
-            <th class="text_center litchi-minor">
-                30
-            </th>
-        </tr>
-        <tr id="buttery">
-            <th class="text_center">
-                生活用品
-            </th>
-            <th class="text_center pay-buttery">
-                电池
-            </th>
-            <th class="text_center">
-                2
-            </th>
-            <th class="text_center">
-                个
-            </th>
-            <th class="text_center buttery-count">
-                2
-            </th>
-            <th class="text_center buttery-minor">
-                4
-            </th>
-        </tr>
-        <tr id="noodle">
-            <th class="text_center">
-                食品
-            </th>
-            <th class="text_center pay-noodle">
-                方便面
-            </th>
-            <th class="text_center">
-                4.5
-            </th>
-            <th class="text_center">
-                袋
-            </th>
-            <th class="text_center noodle-count">
-                2
-            </th>
-            <th class="text_center noodle-minor">
-                9
-            </th>
-        </tr>
+        <tbody id="show_goods">
+
         </tbody>
     </table>
     <div class="jumbotron text_left">
@@ -220,77 +101,11 @@
             </th>
         </tr>
         </thead>
-        <tbody>
-        <tr id="give-cola">
-            <th class="text_center">
-                饮料
-            </th>
-            <th class="text_center">
-                可口可乐
-            </th>
-            <th class="text_center give-cola-count">
-                1
-            </th>
-        </tr>
-        <tr id="give-spring">
-            <th class="text_center">
-                饮料
-            </th>
-            <th class="text_center">
-                雪碧
-            </th>
-            <th class="text_center give-spring-count">
-                1
-            </th>
-        </tr>
-        <tr id="give-apple">
-            <th class="text_center">
-                水果
-            </th>
-            <th class="text_center">
-                苹果
-            </th>
-            <th class="text_center give-apple-count">
-                1
-            </th>
-        </tr>
-        <tr id="give-litchi">
-            <th class="text_center">
-                水果
-            </th>
-            <th class="text_center">
-                荔枝
-            </th>
-            <th class="text_center give-litchi-count">
-                1
-            </th>
-        </tr>
-        <tr id="give-buttery">
-            <th class="text_center">
-                生活用品
-            </th>
-            <th class="text_center">
-                电池
-            </th>
-            <th class="text_center give-buttery-count">
-                1
-            </th>
-        </tr>
-        <tr id="give-noodle">
-            <th class="text_center">
-                食品
-            </th>
-            <th class="text_center">
-                方便面
-            </th>
-            <th class="text_center give-noodle-count">
-                1
-            </th>
-        </tr>
+        <tbody id="show_preferential">
         </tbody>
     </table>
     <p align="right">总计：<span  id="total">0.00</span>元</p>
-    <p align="right">节省：<span id="save">0.00</span>元</p>
+    <p align="right">节省：<span id="preferential">0.00</span>元</p>
     <p align="right"><a href="../index.html" class="btn btn-primary btn-lg sure" role="button">确认</a></p>
 </div>
 
