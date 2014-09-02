@@ -19,14 +19,14 @@ $(document).ready(function() {
                     var price = allItems[i].price;
                     var unit = allItems[i].unit;
                     var original_cost = minor_total = price * count;
-                    var show_cost = "<span>"+minor_total+"</span>" + "元";
+                    var show_cost = "<span>" + minor_total + "</span>" + "元";
 
                     for (var k = 0; k < preferential.length; k++) {
                         if(name == preferential[k]) {
                             if (count >= 3) {
                                 var num = count - parseInt(count / 3);
                                 minor_total = price * num;
-                                show_cost = "<span>"+minor_total+"</span>" + "元(原价：" + "<span>"+original_cost+"</span>" + "元)";
+                                show_cost = "<span>" + minor_total + "</span>" + "元(原价：" + "<span>" + original_cost + "</span>" + "元)";
                             }
                         }
                     }
@@ -39,7 +39,8 @@ $(document).ready(function() {
                             "<td>" + unit + "</td>" +
                             "<td>" +
                             "<div class='row'>" +
-                            "<div class='col-lg-6'><div class='input-group input-grounp_width'>" +
+                            "<div class='col-lg-6'>" +
+                            "<div class='input-group input-grounp_width'>" +
                             "<span class='input-group-btn'>" +
                             "<button class='btn btn-default sub-goods' type='button'>-</button>" +
                             "</span>" +
@@ -47,14 +48,13 @@ $(document).ready(function() {
                             "<span class='input-group-btn'>" +
                             "<button class='btn btn-default add-goods' type='button'>+</button>" +
                             "</span>" +
-                            "</div><!-- /input-group -->" +
-                            "</div><!-- /col-lg-6 -->" +
-                            "</div><!-- /.row -->" +
+                            "</div>" +
+                            "</div>" +
+                            "</div>" +
                             "</td>" +
-                            "<td>" +
-                                show_cost+
-                            "</td>" +
-                            "</tr>");
+                            "<td>" + show_cost+ "</td>" +
+                            "</tr>"
+                    );
                     $('tbody').append(showGoods);
                     numbers += count;
                     total += minor_total;

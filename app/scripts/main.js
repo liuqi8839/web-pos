@@ -50,5 +50,4 @@ $(document).ready(function() {
     localStorage.AllItems = JSON.stringify(ItemList);
     var preferential = ['可口可乐','雪碧'];
     localStorage.preferential = JSON.stringify(preferential);
-
 });

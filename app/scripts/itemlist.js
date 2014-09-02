@@ -11,22 +11,7 @@ $(document).ready(function() {
     }
     $('#item-numbers').text(numbers);
 
-    function addGoods(name) {
-        numbers += 1;
-        $('#item-numbers').text(numbers);
-        var flag = true;
-        for (var i = 0; i < goods.length; i++){
-            if(goods[i].name == name) {
-                goods[i].numbers += 1;
-                flag = false;
-                break;
-            }
-        }
-        if(flag == true) {
-            goods.push({name: name, numbers: 1});
-        }
-        localStorage.Item = JSON.stringify(goods);
-    }
+
     var allItems = JSON.parse(localStorage.AllItems);
     for(var j = 0; j < allItems.length; j++) {
         name = allItems[j].name;
@@ -53,4 +38,21 @@ $(document).ready(function() {
         event.stopPropagation();
         addGoods($(this).parent().parent().prev().prev().prev().text());
     });
+
+    function addGoods(name) {
+        numbers += 1;
+        $('#item-numbers').text(numbers);
+        var flag = true;
+        for (var i = 0; i < goods.length; i++){
+            if(goods[i].name == name) {
+                goods[i].numbers += 1;
+                flag = false;
+                break;
+            }
+        }
+        if(flag == true) {
+            goods.push({name: name, numbers: 1});
+        }
+        localStorage.Item = JSON.stringify(goods);
+    }
 });
