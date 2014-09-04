@@ -10,6 +10,9 @@ $(document).ready(function() {
     var allItems = JSON.parse(localStorage.AllItems);
     var preferential = JSON.parse(localStorage.preferential);
 
+    var myDate = new Date();
+    $("#now_time").text(myDate.toLocaleString());
+
     for(var i = 0; i < allItems.length; i++) {
         for(var j = 0; j < goods.length; j++) {
             var name = goods[j].name;
@@ -57,8 +60,11 @@ $(document).ready(function() {
             }
         }
     }
-    $("#total").text(total);
-    $("#preferential").text(preferentialCost);
+
+    var total_cost = total.toFixed(2);
+    var preferential_cost = preferentialCost.toFixed(2);
+    $("#total").text(total_cost);
+    $("#preferential").text(preferential_cost);
     $("#item-numbers").text(numbers);
     $(".sure").on("click",function() {
        localStorage.Item = "[]";

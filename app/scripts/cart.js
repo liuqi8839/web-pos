@@ -38,9 +38,7 @@ $(document).ready(function() {
                             "<td style='width: 218px;'>" + price + "</td>" +
                             "<td>" + unit + "</td>" +
                             "<td>" +
-                            "<div class='row'>" +
-                            "<div class='col-lg-6'>" +
-                            "<div class='input-group input-grounp_width'>" +
+                            "<div class='input-group input-grounp_width' align='center'>" +
                             "<span class='input-group-btn'>" +
                             "<button class='btn btn-default sub-goods' type='button'>-</button>" +
                             "</span>" +
@@ -48,8 +46,6 @@ $(document).ready(function() {
                             "<span class='input-group-btn'>" +
                             "<button class='btn btn-default add-goods' type='button'>+</button>" +
                             "</span>" +
-                            "</div>" +
-                            "</div>" +
                             "</div>" +
                             "</td>" +
                             "<td>" + show_cost+ "</td>" +
@@ -61,8 +57,8 @@ $(document).ready(function() {
                 }
             }
         }
-
-        $('#total').text(total);
+        var total_cost = total.toFixed(2);
+        $('#total').text(total_cost);
         $('#item-numbers').text(numbers);
         $('.sub-goods').on('click', function() {
             var goods = JSON.parse(localStorage.Item);

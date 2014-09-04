@@ -46,37 +46,36 @@
 
 <div class="container theme-showcase" role="main">
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron ">
-        <div class="container-fluid">
-            <div class="row-fluid">
-                        商品列表
-            </div>
+    <div class="panel panel-default col-sm-12 theme-showcase" role="main" >
+        <div class="panel-heading">
+            <h3 class="panel-title text_center">商品列表</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered text_center">
+                <thead>
+                <tr>
+                    <th class="text_center">
+                        分类
+                    </th>
+                    <th class="text_center">
+                        名称
+                    </th>
+                    <th class="text_center">
+                        单价（元）
+                    </th>
+                    <th class="text_center">
+                        单位
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
         </div>
     </div>
-
-    <table class="table table-bordered text_center">
-        <thead>
-        <tr>
-            <th class="text_center">
-                分类
-            </th>
-            <th class="text_center">
-                名称
-            </th>
-            <th class="text_center">
-                单价（元）
-            </th>
-            <th class="text_center">
-                单位
-            </th>
-            <th>
-            </th>
-        </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-    </table>
 </div>
 
 
@@ -113,7 +112,7 @@
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="../scripts/itemlist.js"></script>
-<script src="../underscore.js"></script>
+<script src="../scripts/underscore.js"></script>
 
 <!-- endbuild -->
 </body>
